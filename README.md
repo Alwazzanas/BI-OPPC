@@ -4,6 +4,17 @@
 
 ---
 
+# 📝 Executive Summary  
+BI‑OPPC delivers executive‑level consulting in Business Intelligence and Operational Process Development.  
+Our approach transforms data into actionable insights, enhances operational efficiency, and supports leadership in making informed strategic decisions.
+
+We serve educational institutions, private companies, and government entities through structured methodologies, advanced analytics, and tailored operational frameworks.  
+Our unified Black & Gold identity reflects clarity, precision, and high‑impact results.
+
+BI‑OPPC stands as a trusted partner for organizations seeking measurable improvement, sustainable growth, and executive‑grade operational excellence.
+
+---
+
 # 🇸🇦 النسخة العربية
 
 ## 🏢 من نحن  
@@ -56,8 +67,8 @@ BI‑OPPC شركة استشارية متخصصة في **ذكاء الأعمال*
 ---
 
 ## 📞 تواصل معنا  
-- البريد: info@bi-oppc.com  
-- الهاتف: +966 0000 000  
+- البريد: **Alwazzanas@msn.com**  
+- الهاتف: **+966 559473230**  
 - LinkedIn: linkedin.com/company/bi-oppc  
 
 ---
@@ -114,13 +125,6 @@ The website follows a unified Black & Gold executive theme:
 ---
 
 ## 📞 Contact  
-- Email: info@bi-oppc.com  
-- Phone: +966 0000 000  
-- LinkedIn: linkedin.com/company/bi-oppc  
-
----
-
-## 🔧 Badges  
-![Status](https://img.shields.io/badge/Status-Active-gold)  
-![Identity](https://img.shields.io/badge/Identity-Black%20%26%20Gold-black)  
-![Consulting](https://img.shields.io/badge/Field-Consulting-blue)
+- Email: **Alwazzanas@msn.com**  
+- Phone: **+966 559473230**  
+- LinkedIn: linkedin
