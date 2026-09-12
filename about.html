@@ -2,7 +2,8 @@
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <title>نبذة عن الشركة | BI‑OPPC</title>
+    <title>نبذة عن BI‑OPPC</title>
+
     <style>
         body {
             margin: 0;
@@ -10,23 +11,25 @@
             background: #000;
             color: #fff;
             line-height: 1.8;
+            padding-top: 140px;
         }
 
-        header {
-            padding: 20px;
+        /* الشعار */
+        .logo img {
+            width: 120px;
+            margin-bottom: 10px;
+        }
+
+        /* الـ Navbar */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: #000;
+            padding: 15px 0;
             text-align: center;
             border-bottom: 1px solid #333;
-        }
-
-        header h1 {
-            color: #d4af37;
-            font-size: 32px;
-            margin: 0;
-        }
-
-        nav {
-            text-align: center;
-            margin-top: 15px;
+            z-index: 999;
         }
 
         nav a {
@@ -36,25 +39,43 @@
             font-size: 18px;
         }
 
+        /* الأقسام */
         section {
             padding: 40px 20px;
-            max-width: 900px;
+            max-width: 1000px;
             margin: auto;
         }
 
         h2 {
             color: #d4af37;
-            margin-bottom: 10px;
-        }
-
-        .about-box {
-            background: #111;
-            padding: 20px;
-            border-left: 4px solid #d4af37;
-            border-radius: 6px;
             margin-bottom: 20px;
+            font-size: 30px;
+            text-align: center;
         }
 
+        .box {
+            background: #111;
+            padding: 25px;
+            border-radius: 8px;
+            border-left: 4px solid #d4af37;
+            margin-bottom: 25px;
+        }
+
+        /* قائمة القيم */
+        ul {
+            padding: 0;
+            list-style: none;
+        }
+
+        ul li {
+            background: #1a1a1a;
+            padding: 12px;
+            margin-bottom: 10px;
+            border-radius: 6px;
+            border-right: 4px solid #d4af37;
+        }
+
+        /* زر واتساب */
         .whatsapp-btn {
             position: fixed;
             bottom: 20px;
@@ -66,66 +87,30 @@
             font-size: 18px;
             text-decoration: none;
         }
+
+        /* الفوتر */
+        footer {
+            background: #000;
+            color: #d4af37;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            border-top: 1px solid #333;
+        }
     </style>
 </head>
 
 <body>
 
 <header>
-    <h1>نبذة عن BI‑OPPC</h1>
+    <div class="logo">
+        <img src="logo.jpeg" alt="BI‑OPPC Logo">
+    </div>
+
     <nav>
         <a href="index.html">الرئيسية</a>
         <a href="services.html">الخدمات</a>
         <a href="training.html">التدريب</a>
-        <a href="about.html">نبذة عن الشركة</a>
-        <a href="contact.html">تواصل معنا</a>
-    </nav>
-</header>
-
-<section>
-    <h2>من نحن</h2>
-    <div class="about-box">
-        <p>
-            BI‑OPPC هي شركة استشارية متخصصة في ذكاء الأعمال وتطوير العمليات التشغيلية والإدارية.
-            نعمل على تمكين المؤسسات من اتخاذ القرار المبني على البيانات، وتحسين الأداء عبر حلول تنفيذية
-            تعتمد على التحليل المتقدم، الحوكمة، وتطوير الإجراءات.
-        </p>
-    </div>
-</section>
-
-<section>
-    <h2>رؤيتنا</h2>
-    <div class="about-box">
-        <p>
-            أن تكون BI‑OPPC الشريك التنفيذي الأول في تطوير العمليات وذكاء الأعمال في السوق السعودي،
-            عبر تقديم حلول عملية ذات تأثير مباشر على الأداء المؤسسي.
-        </p>
-    </div>
-</section>
-
-<section>
-    <h2>رسالتنا</h2>
-    <div class="about-box">
-        <p>
-            دعم المؤسسات في رحلتها نحو التحول التشغيلي والإداري، من خلال أدوات ذكاء الأعمال،
-            تطوير الإجراءات، ورفع كفاءة التشغيل.
-        </p>
-    </div>
-</section>
-
-<section>
-    <h2>قيمنا</h2>
-    <div class="about-box">
-        <ul>
-            <li>الجودة</li>
-            <li>الشفافية</li>
-            <li>الابتكار</li>
-            <li>الالتزام</li>
-        </ul>
-    </div>
-</section>
-
-<a class="whatsapp-btn" href="https://wa.me/966000000000" target="_blank">واتساب</a>
-
-</body>
-</html>
+        <a href="about.html">نبذة</a>
+        <a href="partners.html">شركاؤنا</a>
+        <a href="projects.html">مشاريعنا</a>
