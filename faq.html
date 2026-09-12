@@ -3,57 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <title>الأسئلة الشائعة | BI‑OPPC</title>
+
     <style>
-        body { margin:0; font-family:'Cairo',sans-serif; background:#000; color:#fff; line-height:1.8; }
-        header { padding:20px; text-align:center; border-bottom:1px solid #333; }
-        header h1 { color:#d4af37; font-size:32px; margin:0; }
-        nav { text-align:center; margin-top:15px; }
-        nav a { color:#d4af37; margin:0 15px; text-decoration:none; font-size:18px; }
-        section { padding:40px 20px; max-width:900px; margin:auto; }
-        h2 { color:#d4af37; margin-bottom:10px; }
-        .faq-box { background:#111; padding:20px; border-left:4px solid #d4af37; border-radius:6px; margin-bottom:20px; }
-        .faq-box h3 { color:#d4af37; margin-top:0; }
-        .whatsapp-btn { position:fixed; bottom:20px; left:20px; background:#25D366; color:white; padding:12px 18px; border-radius:50px; font-size:18px; text-decoration:none; }
-    </style>
-</head>
+        body {
+            margin: 0;
+            font-family: 'Cairo', sans-serif;
+            background: #000;
+            color: #fff;
+            line-height: 1.8;
+            padding-top: 140px;
+        }
 
-<body>
+        /* الشعار */
+        .logo img {
+            width: 120px;
+            margin-bottom: 10px;
+        }
 
-<header>
-    <h1>الأسئلة الشائعة</h1>
-    <nav>
-        <a href="index.html">الرئيسية</a>
-        <a href="services.html">الخدمات</a>
-        <a href="training.html">التدريب</a>
-        <a href="about.html">نبذة</a>
-        <a href="partners.html">شركاؤنا</a>
-        <a href="projects.html">مشاريعنا</a>
-        <a href="faq.html">الأسئلة الشائعة</a>
-        <a href="contact.html">تواصل</a>
-    </nav>
-</header>
+        /* الـ Navbar */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: #000;
+            padding: 15px 0;
+            text-align: center;
+            border-bottom: 1px solid #333;
+            z-index: 999;
+        }
 
-<section>
-    <h2>أسئلة متكررة</h2>
+        nav a {
+            color: #d4af37;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 18px;
+        }
 
-    <div class="faq-box">
-        <h3>ما هي خدمات BI‑OPPC؟</h3>
-        <p>نقدم حلول ذكاء الأعمال، تطوير العمليات، إعداد التقارير، وتحليل البيانات.</p>
-    </div>
+        /* الأقسام */
+        section {
+            padding: 40px 20px;
+            max-width: 1100px;
+            margin: auto;
+        }
 
-    <div class="faq-box">
-        <h3>هل تقدمون تدريبًا للمدارس؟</h3>
-        <p>نعم، نقدم برامج تدريبية متخصصة للمدارس والجهات التعليمية.</p>
-    </div>
+        h2 {
+            color: #d4af37;
+            margin-bottom: 20px;
+            font-size: 30px;
+            text-align: center;
+        }
 
-    <div class="faq-box">
-        <h3>كيف يمكن التواصل معكم؟</h3>
-        <p>عبر البريد الإلكتروني، لينكدإن، أو زر واتساب الموجود في الموقع.</p>
-    </div>
+        /* Accordion */
+        .faq-item {
+            background: #111;
+            margin-bottom: 15px;
+            border-radius: 6px;
+            border-left: 4px solid #d4af37;
+            overflow: hidden;
+        }
 
-</section>
-
-<a class="whatsapp-btn" href="https://wa.me/966000000000" target="_blank">واتساب</a>
-
-</body>
-</html>
+        .faq-question {
+            padding: 18px;
+            cursor: pointer;
