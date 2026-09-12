@@ -1,6 +1,4 @@
-# BI-OPPC
-Business Intelligence &amp; Operation Process and Development Consulting
-# BI‑OPPC  
+
 ## Business Intelligence & Operational Process Consulting  
 تصميم Black & Gold Executive
 
