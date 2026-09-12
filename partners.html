@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>شركاؤنا | BI‑OPPC</title>
+
     <style>
         body {
             margin: 0;
@@ -10,23 +11,25 @@
             background: #000;
             color: #fff;
             line-height: 1.8;
+            padding-top: 140px;
         }
 
-        header {
-            padding: 20px;
+        /* الشعار */
+        .logo img {
+            width: 120px;
+            margin-bottom: 10px;
+        }
+
+        /* الـ Navbar */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: #000;
+            padding: 15px 0;
             text-align: center;
             border-bottom: 1px solid #333;
-        }
-
-        header h1 {
-            color: #d4af37;
-            font-size: 32px;
-            margin: 0;
-        }
-
-        nav {
-            text-align: center;
-            margin-top: 15px;
+            z-index: 999;
         }
 
         nav a {
@@ -36,19 +39,75 @@
             font-size: 18px;
         }
 
+        /* الأقسام */
         section {
             padding: 40px 20px;
-            max-width: 900px;
+            max-width: 1100px;
             margin: auto;
         }
 
         h2 {
             color: #d4af37;
-            margin-bottom: 10px;
+            margin-bottom: 20px;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        /* شبكة الشركاء */
+        .partners-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 25px;
         }
 
         .partner-box {
             background: #111;
+            padding: 25px;
+            border-radius: 8px;
+            border: 2px solid #d4af37;
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .partner-box:hover {
+            background: #1a1a1a;
+            transform: translateY(-5px);
+        }
+
+        .partner-icon {
+            font-size: 45px;
+            color: #d4af37;
+            margin-bottom: 15px;
+        }
+
+        .partner-title {
+            font-size: 22px;
+            color: #d4af37;
+            margin-bottom: 10px;
+        }
+
+        .partner-desc {
+            font-size: 16px;
+            color: #ccc;
+        }
+
+        /* زر واتساب */
+        .whatsapp-btn {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            background: #25D366;
+            color: white;
+            padding: 12px 18px;
+            border-radius: 50px;
+            font-size: 18px;
+            text-decoration: none;
+        }
+
+        /* الفوتر */
+        footer {
+            background: #000;
+            color: #d4af37;
+            text-align: center;
             padding: 20px;
-            border-left: 4px solid #d4af37;
-            border-radius: 6px;
+            margin-top: 40px
