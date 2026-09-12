@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>تواصل معنا | BI‑OPPC</title>
+
     <style>
         body {
             margin: 0;
@@ -10,23 +11,25 @@
             background: #000;
             color: #fff;
             line-height: 1.8;
+            padding-top: 140px;
         }
 
-        header {
-            padding: 20px;
+        /* الشعار */
+        .logo img {
+            width: 120px;
+            margin-bottom: 10px;
+        }
+
+        /* الـ Navbar */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: #000;
+            padding: 15px 0;
             text-align: center;
             border-bottom: 1px solid #333;
-        }
-
-        header h1 {
-            color: #d4af37;
-            font-size: 32px;
-            margin: 0;
-        }
-
-        nav {
-            text-align: center;
-            margin-top: 15px;
+            z-index: 999;
         }
 
         nav a {
@@ -36,6 +39,7 @@
             font-size: 18px;
         }
 
+        /* الأقسام */
         section {
             padding: 40px 20px;
             max-width: 900px;
@@ -44,49 +48,72 @@
 
         h2 {
             color: #d4af37;
-            margin-bottom: 10px;
+            margin-bottom: 20px;
+            font-size: 30px;
+            text-align: center;
         }
 
+        /* صندوق المعلومات */
         .contact-box {
             background: #111;
-            padding: 20px;
+            padding: 25px;
+            border-radius: 8px;
             border-left: 4px solid #d4af37;
-            border-radius: 6px;
-            margin-bottom: 20px;
+            margin-bottom: 25px;
         }
 
         .contact-box p {
-            margin: 8px 0;
+            margin: 10px 0;
+            font-size: 18px;
         }
 
+        /* نموذج التواصل */
         form {
             background: #111;
-            padding: 20px;
-            border-radius: 6px;
+            padding: 25px;
+            border-radius: 8px;
             border-left: 4px solid #d4af37;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #d4af37;
+            font-size: 18px;
         }
 
         input, textarea {
             width: 100%;
             padding: 12px;
-            margin-top: 10px;
-            border: none;
+            margin-bottom: 20px;
             border-radius: 6px;
-            background: #222;
+            border: 1px solid #444;
+            background: #1a1a1a;
             color: #fff;
+            font-size: 16px;
+        }
+
+        textarea {
+            height: 120px;
         }
 
         button {
             background: #d4af37;
             color: #000;
-            padding: 12px 20px;
+            padding: 14px 20px;
             border: none;
             border-radius: 6px;
-            font-size: 16px;
-            margin-top: 15px;
+            font-size: 18px;
             cursor: pointer;
+            width: 100%;
+            font-weight: bold;
         }
 
+        button:hover {
+            background: #e6c45c;
+        }
+
+        /* زر واتساب */
         .whatsapp-btn {
             position: fixed;
             bottom: 20px;
@@ -98,18 +125,37 @@
             font-size: 18px;
             text-decoration: none;
         }
+
+        /* الفوتر */
+        footer {
+            background: #000;
+            color: #d4af37;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            border-top: 1px solid #333;
+        }
     </style>
 </head>
 
 <body>
 
 <header>
-    <h1>تواصل معنا</h1>
+    <div class="logo">
+        <img src="logo.jpeg" alt="BI‑OPPC Logo">
+    </div>
+
     <nav>
         <a href="index.html">الرئيسية</a>
         <a href="services.html">الخدمات</a>
         <a href="training.html">التدريب</a>
-        <a href="contact.html">تواصل معنا</a>
+        <a href="about.html">نبذة</a>
+        <a href="partners.html">شركاؤنا</a>
+        <a href="projects.html">مشاريعنا</a>
+        <a href="policies.html">السياسات</a>
+        <a href="faq.html">الأسئلة الشائعة</a>
+        <a href="request-service.html">طلب خدمة</a>
+        <a href="contact.html">تواصل</a>
     </nav>
 </header>
 
@@ -135,13 +181,17 @@
         <input type="email" name="email" required>
 
         <label>رسالتك:</label>
-        <textarea name="message" rows="5" required></textarea>
+        <textarea name="message" required></textarea>
 
         <button type="submit">إرسال</button>
     </form>
 </section>
 
 <a class="whatsapp-btn" href="https://wa.me/966000000000" target="_blank">واتساب</a>
+
+<footer>
+    © 2026 BI‑OPPC — Business Intelligence & Operational Process Consulting
+</footer>
 
 </body>
 </html>
