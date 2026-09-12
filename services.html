@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>خدمات BI‑OPPC</title>
+
     <style>
         body {
             margin: 0;
@@ -10,23 +11,25 @@
             background: #000;
             color: #fff;
             line-height: 1.8;
+            padding-top: 140px;
         }
 
-        header {
-            padding: 20px;
+        /* الشعار */
+        .logo img {
+            width: 120px;
+            margin-bottom: 10px;
+        }
+
+        /* الـ Navbar */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: #000;
+            padding: 15px 0;
             text-align: center;
             border-bottom: 1px solid #333;
-        }
-
-        header h1 {
-            color: #d4af37;
-            font-size: 32px;
-            margin: 0;
-        }
-
-        nav {
-            text-align: center;
-            margin-top: 15px;
+            z-index: 999;
         }
 
         nav a {
@@ -36,30 +39,59 @@
             font-size: 18px;
         }
 
+        /* الأقسام */
         section {
             padding: 40px 20px;
-            max-width: 900px;
+            max-width: 1100px;
             margin: auto;
         }
 
         h2 {
             color: #d4af37;
-            margin-bottom: 10px;
+            margin-bottom: 20px;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        /* شبكة الأيقونات */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
         }
 
         .service-box {
             background: #111;
-            padding: 20px;
-            margin-bottom: 20px;
-            border-left: 4px solid #d4af37;
-            border-radius: 6px;
+            padding: 25px;
+            border-radius: 8px;
+            border: 2px solid #d4af37;
+            text-align: center;
+            transition: 0.3s;
         }
 
-        .service-box h3 {
+        .service-box:hover {
+            background: #1a1a1a;
+            transform: translateY(-5px);
+        }
+
+        .service-icon {
+            font-size: 50px;
             color: #d4af37;
-            margin-top: 0;
+            margin-bottom: 15px;
         }
 
+        .service-title {
+            font-size: 22px;
+            color: #d4af37;
+            margin-bottom: 10px;
+        }
+
+        .service-desc {
+            font-size: 16px;
+            color: #ccc;
+        }
+
+        /* زر واتساب */
         .whatsapp-btn {
             position: fixed;
             bottom: 20px;
@@ -71,62 +103,93 @@
             font-size: 18px;
             text-decoration: none;
         }
+
+        /* الفوتر */
+        footer {
+            background: #000;
+            color: #d4af37;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            border-top: 1px solid #333;
+        }
     </style>
 </head>
 
 <body>
 
 <header>
-    <h1>خدمات BI‑OPPC</h1>
+    <div class="logo">
+        <img src="logo.jpeg" alt="BI‑OPPC Logo">
+    </div>
+
     <nav>
         <a href="index.html">الرئيسية</a>
         <a href="services.html">الخدمات</a>
         <a href="training.html">التدريب</a>
-        <a href="contact.html">تواصل معنا</a>
+        <a href="about.html">نبذة</a>
+        <a href="partners.html">شركاؤنا</a>
+        <a href="projects.html">مشاريعنا</a>
+        <a href="policies.html">السياسات</a>
+        <a href="faq.html">الأسئلة الشائعة</a>
+        <a href="request-service.html">طلب خدمة</a>
+        <a href="contact.html">تواصل</a>
     </nav>
 </header>
 
 <section>
     <h2>خدماتنا التنفيذية</h2>
 
-    <div class="service-box">
-        <h3>ذكاء الأعمال BI</h3>
-        <p>
-            بناء لوحات تحكم تنفيذية، تحليل البيانات، دعم اتخاذ القرار، وتطوير تقارير الأداء.
-        </p>
-    </div>
+    <div class="services-grid">
 
-    <div class="service-box">
-        <h3>تحسين العمليات التشغيلية</h3>
-        <p>
-            إعادة هندسة الإجراءات، رفع كفاءة التشغيل، تقليل الهدر، وتحسين الإنتاجية.
-        </p>
-    </div>
+        <div class="service-box">
+            <div class="service-icon">📊</div>
+            <div class="service-title">ذكاء الأعمال BI</div>
+            <div class="service-desc">
+                بناء لوحات تحكم، تحليل البيانات، دعم اتخاذ القرار، وتطوير تقارير الأداء.
+            </div>
+        </div>
 
-    <div class="service-box">
-        <h3>تطوير العمليات الإدارية</h3>
-        <p>
-            تصميم نماذج العمل، تطوير السياسات، تحسين الحوكمة، وتنسيق العمليات بين الإدارات.
-        </p>
-    </div>
+        <div class="service-box">
+            <div class="service-icon">⚙️</div>
+            <div class="service-title">تحسين العمليات التشغيلية</div>
+            <div class="service-desc">
+                إعادة هندسة الإجراءات، رفع الكفاءة، تقليل الهدر، وتحسين الإنتاجية.
+            </div>
+        </div>
 
-    <div class="service-box">
-        <h3>إعداد التقارير التنفيذية</h3>
-        <p>
-            تصميم تقارير احترافية للإدارة العليا، مؤشرات الأداء، وتحليل الاتجاهات التشغيلية.
-        </p>
-    </div>
+        <div class="service-box">
+            <div class="service-icon">📁</div>
+            <div class="service-title">تطوير العمليات الإدارية</div>
+            <div class="service-desc">
+                تصميم نماذج العمل، تطوير السياسات، تحسين الحوكمة، وتنسيق العمليات.
+            </div>
+        </div>
 
-    <div class="service-box">
-        <h3>تحليل البيانات</h3>
-        <p>
-            تحليل البيانات التشغيلية والإدارية، استخراج الأنماط، وتقديم توصيات تنفيذية دقيقة.
-        </p>
-    </div>
+        <div class="service-box">
+            <div class="service-icon">📈</div>
+            <div class="service-title">إعداد التقارير التنفيذية</div>
+            <div class="service-desc">
+                تصميم تقارير احترافية للإدارة العليا، مؤشرات الأداء، وتحليل الاتجاهات.
+            </div>
+        </div>
 
+        <div class="service-box">
+            <div class="service-icon">🔍</div>
+            <div class="service-title">تحليل البيانات</div>
+            <div class="service-desc">
+                تحليل البيانات التشغيلية والإدارية، استخراج الأنماط، وتقديم توصيات دقيقة.
+            </div>
+        </div>
+
+    </div>
 </section>
 
 <a class="whatsapp-btn" href="https://wa.me/966000000000" target="_blank">واتساب</a>
+
+<footer>
+    © 2026 BI‑OPPC — Business Intelligence & Operational Process Consulting
+</footer>
 
 </body>
 </html>
